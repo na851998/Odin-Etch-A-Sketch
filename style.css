@@ -1,0 +1,113 @@
+:root {
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+    --accent-color: #4CAF50;
+    --hover-color: #3e8e41;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+	font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 77.5rem;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--primary-dark);
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+button {
+    padding: 12px 20px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button.active {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* HEADER */
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+/* MAIN */
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 250px;
+    background-color: var(--secondary-light);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+}
+
+.grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.square-div {
+    user-select: none;
+}
+
+input[type="color"] {
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+	height: 3rem;
+}
+
+input[type="range"] {
+    width: 100%;
+}

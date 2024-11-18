@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+	<link
+      rel="icon"
+      href="https://www.svgrepo.com/show/475356/drawing-board.svg"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="title">Etch a sketch</h1>
+    </header>
+    <main>
+      <section
+        class="container padding"
+        style="
+          display: flex;
+          gap: 6rem;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div class="settings">
+          <input type="color" id="favcolor" />
+          <button id="random-color">Random Color</button>
+          <input type="range" min="1" max="100" value="5" id="sketch-size" />
+          <p id="value">Value:</p>
+          <button id="clear">Clear</button>
+        </div>
+        <div class="sketch-screen"></div>
+      </section>
+    </main>
+  </body>
+</html>
